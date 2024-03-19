@@ -1,0 +1,9 @@
+Extremely_Wet_Prec = LoadData("21")
+plot_data = ManKendallTest(Extremely_Wet_Prec)
+PlotGraph(plot_data,hour="21th")
+
+
+
+plot_data,intercept_plot = SenSlope(Extremely_Wet_Prec)
+PlotGraph(plot_data,test="Sen\'s Slope",hour="21th")
+PlotGraph(intercept_plot,test="Sen\'s Slope Intercept",hour="21th")
